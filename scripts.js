@@ -12,6 +12,7 @@ function init() {
     const right = document.getElementById("right");
     const left = document.getElementById("left")
     const shuttle = document.getElementById("rocket");
+    const position = 0;
     
 
 takeOff.addEventListener("click", function (event) {
@@ -36,12 +37,9 @@ missionAbort.addEventListener("click", function (event){
     }
 });
 up.addEventListener("click", function (event){
-    let goingUp = 10;
-    shuttle.style.position = "relative";
-    shuttle.style.up = (goingUp) + "px";
-    // e.preventDefault();
-    let startPosition = 0
-    shuttleHeight.innerHTML = startPosition + "10000"
+   shuttle.style.position = "relative";
+   position += 10;
+   shuttle.style.up = position + "px";
 
 });
 
