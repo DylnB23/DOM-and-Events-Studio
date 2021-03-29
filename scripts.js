@@ -12,3 +12,4 @@ takeOff.addEventListener("click", function (event) {
     }
 });
 }
+window.addEventListener("load", init);
