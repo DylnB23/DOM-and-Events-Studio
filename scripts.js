@@ -7,6 +7,12 @@ function init() {
     const shuttleHeight = document.getElementById("spaceShuttleHeight");
     const landing = document.getElementById("landing");
     const missionAbort = document.getElementById("missionAbort");
+    const up = document.getElementById("up");
+    const down = document.getElementById("down");
+    const right = document.getElementById("right");
+    const left = document.getElementById("left")
+    const shuttle = document.getElementById("rocket");
+    
 
 takeOff.addEventListener("click", function (event) {
     if (window.confirm("Confirm that the shuttle is ready for takeoff.")){
@@ -29,5 +35,12 @@ missionAbort.addEventListener("click", function (event){
         shuttleHeight.innerHTML = "0";
     }
 });
+up.addEventListener("click", function (event){
+    let position = 0
+    shuttle.style.up = position + "10px";
+    shuttleHeight.innerHTML = position + "10000"
+
+})
+
 }
 window.addEventListener("load", init);
