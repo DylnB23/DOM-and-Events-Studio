@@ -36,8 +36,8 @@ missionAbort.addEventListener("click", function (event){
         shuttleHeight.innerHTML = "0";
     }
 });
+shuttle.style.position = "relative";
 up.addEventListener("click", function (event){
-   shuttle.style.position = "relative";
    position += 10;
    shuttle.style.up = position + "px";
 
