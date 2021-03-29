@@ -10,7 +10,7 @@ takeOff.addEventListener("click", function (event) {
     if (window.confirm("Confirm that the shuttle is ready for takeoff.")){
         flightStatus.innerHTML = "Shuttle in flight.";
         shuttleBackground.style.backgroundColor = "blue";
-        shuttleHeight = 10,000
+        shuttleHeight = "10,000"
     }
 });
 }
