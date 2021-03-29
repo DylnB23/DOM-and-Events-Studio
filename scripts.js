@@ -39,7 +39,7 @@ up.addEventListener("click", function (event){
     let goingUp += 10
     shuttle.style.position = "relative";
     shuttle.style.up = (goingUp) + "px";
-    e.preventDefault();
+    // e.preventDefault();
     let startPosition = 0
     shuttleHeight.innerHTML = startPosition + "10000"
 
