@@ -36,7 +36,7 @@ missionAbort.addEventListener("click", function (event){
     }
 });
 up.addEventListener("click", function (event){
-    let goingUp += 10
+    let goingUp = 10;
     shuttle.style.position = "relative";
     shuttle.style.up = (goingUp) + "px";
     // e.preventDefault();
