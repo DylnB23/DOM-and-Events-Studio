@@ -52,7 +52,7 @@ right.addEventListener("click", function (event){
 // });
 down.addEventListener("click", function (event){
     shuttleHeight.innerHTML = numberHeight -= 10000;
-    let newHeight = pixelHeight -= 10;
+    let newHeight = pixelHeight - 10;
     shuttle.style.bottom = newHeight + "px";
 });
 
