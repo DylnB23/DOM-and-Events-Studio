@@ -43,7 +43,7 @@ up.addEventListener("click", function (event){
     let startPosition = 0
     shuttleHeight.innerHTML = startPosition + "10000"
 
-})
+});
 
 }
 window.addEventListener("load", init);
