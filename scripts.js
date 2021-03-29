@@ -37,18 +37,23 @@ missionAbort.addEventListener("click", function (event){
     }
 });
 
-up.addEventListener("click", function (event){
-    shiftUp += 10;
-    shuttle.style.position = "relative";
-    shuttle.style.up = (shiftUp) + "px";
-    e.preventDefault(); 
+left.addEventListener("click", function (event){
+    let newHeight = pixelHeight -= 10;
+    shuttle.style.left = newHeight + "px";
+});
+right.addEventListener("click", function (event){
 
 });
+
+// up.addEventListener("click", function (event){
+//     shuttleHeight.innerHTML = 
+    
+
+// });
 down.addEventListener("click", function (event){
-    shiftDown += 10;
-    shuttle.style.position = "relative",
-    shuttle.style.down = (shiftDown) + "px";
-    e.preventDefault();
+    shuttleHeight.innerHTML = numberHeight -= 10000;
+    let newHeight = pixelHeight -= 10;
+    shuttle.style.bottom = newHeight + "px";
 });
 
 }
