@@ -36,9 +36,12 @@ missionAbort.addEventListener("click", function (event){
     }
 });
 up.addEventListener("click", function (event){
-    let position = 0
-    shuttle.style.up = position + "10px";
-    shuttleHeight.innerHTML = position + "10000"
+    let goingUp += 10
+    shuttle.style.position = "relative";
+    shuttle.style.up = (goingUp) + "px";
+    e.preventDefault();
+    let startPosition = 0
+    shuttleHeight.innerHTML = startPosition + "10000"
 
 })
 
