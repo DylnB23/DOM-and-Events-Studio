@@ -36,12 +36,14 @@ missionAbort.addEventListener("click", function (event){
         shuttleHeight.innerHTML = "0";
     }
 });
-shuttle.style.position = "relative";
-up.addEventListener("click", function (event){
-   position += 10;
-   shuttle.style.up = position + "px";
 
-});
+// up.addEventListener("click", function (event){
+//     shiftUp += 10;
+//     shuttle.style.position = "relative";
+//     shuttle.style.up = (shiftUp) + "px";
+//     e.preventDefault(); 
+
+// });
 
 }
 window.addEventListener("load", init);
