@@ -37,13 +37,19 @@ missionAbort.addEventListener("click", function (event){
     }
 });
 
-// up.addEventListener("click", function (event){
-//     shiftUp += 10;
-//     shuttle.style.position = "relative";
-//     shuttle.style.up = (shiftUp) + "px";
-//     e.preventDefault(); 
+up.addEventListener("click", function (event){
+    shiftUp += 10;
+    shuttle.style.position = "relative";
+    shuttle.style.up = (shiftUp) + "px";
+    e.preventDefault(); 
 
-// });
+});
+down.addEventListener("click", function (event){
+    shiftDown += 10;
+    shuttle.style.position = "relative",
+    shuttle.style.down = (shiftDown) + "px";
+    e.preventDefault();
+});
 
 }
 window.addEventListener("load", init);
