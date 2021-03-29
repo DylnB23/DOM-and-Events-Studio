@@ -38,23 +38,26 @@ missionAbort.addEventListener("click", function (event){
 });
 
 left.addEventListener("click", function (event){
-    let newHeight = pixelHeight -= 10;
-    shuttle.style.left = newHeight + "px";
+    shuttle.style.position = 'relative';
+    shuttle.style.left = 10 + 'px'
 });
+
 right.addEventListener("click", function (event){
+    shuttle.style.position = 'relative';
+    shuttle.style.right = 10 + 'px'
 
 });
 
-// up.addEventListener("click", function (event){
-//     shuttleHeight.innerHTML = 
-    
+up.addEventListener("click", function (event){
+    shuttle.style.position = 'relative';
+    shuttle.style.up = 10 + 'px'
+});
 
-// });
 down.addEventListener("click", function (event){
-    shuttleHeight.innerHTML = numberHeight -= 10000;
-    let newHeight = pixelHeight - 10;
-    shuttle.style.bottom = newHeight + "px";
+    shuttle.style.position = 'relative';
+    shuttle.style.down = 10 + 'px'
 });
 
 }
+
 window.addEventListener("load", init);
